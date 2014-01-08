@@ -8,7 +8,7 @@ class Generator
     ['A','E','I','O','U','Y']
   end
  
-  def self.print_all
+  def self.print_five
     count = 0
     consonants.each do |letter1|
       vowels.each do |letter2|
@@ -19,6 +19,19 @@ class Generator
           # if count % 25 == 0
           #   puts "\n"
           # end
+        end
+      end
+    end
+  end
+
+  def self.print_six
+    count = 0
+    consonants.each do |letter1|
+      vowels.each do |letter2|
+        consonants.each do |letter3|
+          consonants.each do |letter4|
+            puts "#{letter1}#{letter2.downcase}#{letter3.downcase}#{letter4.downcase}er  "
+          end
         end
       end
     end
